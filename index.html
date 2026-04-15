@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Architectonics | UNPAR Department of Architecture</title>
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --card: #161616;
+        --accent: #00d4ff; /* Digital Blue/Cyan for Architectonics */
+        --text: #f0f0f0;
+        --text-dim: #a0a0a0;
+      }
+
+      body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 60px 24px;
+        line-height: 1.6;
+      }
+
+      header { margin-bottom: 60px; }
+      h1 { font-size: 3rem; margin-bottom: 8px; letter-spacing: -1.5px; }
+      .dept { color: var(--accent); font-weight: 300; }
+      
+      .tagline { 
+        font-size: 1.2rem; 
+        color: var(--text-dim); 
+        max-width: 600px;
+      }
+
+      .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid #252525;
+        border-radius: 24px;
+        padding: 32px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .card:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+      }
+
+      .full-width { grid-column: span 2; }
+
+      h2 { font-size: 1.5rem; margin-top: 0; color: var(--accent); margin-bottom: 20px; }
+      p { color: var(--text-dim); }
+      strong { color: var(--text); }
+
+      /* Research Streams List */
+      .stream-list { list-style: none; padding: 0; }
+      .stream-item {
+        padding: 12px 0;
+        border-bottom: 1px solid #222;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .stream-item:last-child { border-bottom: none; }
+
+      /* Team Styling */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+      }
+      .member {
+        font-size: 0.9rem;
+        padding: 10px;
+        background: #1f1f1f;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      .btn-outline {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn-outline:hover {
+        background: var(--accent);
+        color: #000;
+      }
+
+      @media (max-width: 768px) {
+        .bento-grid { grid-template-columns: 1fr; }
+        .full-width { grid-column: span 1; }
+        h1 { font-size: 2.2rem; }
+      }
+
+      footer {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #555;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <span class="dept">KBI ARSITEKTONIK</span>
+      <h1>Structure, Material, & <span style="color: var(--accent)">Technology.</span></h1>
+      <p class="tagline">Exploring the synergy between architectural form, construction logic, and advanced material systems within the UNPAR Department of Architecture.</p>
+    </header>
+
+    <main class="bento-grid">
+      
+      <section class="card full-width">
+        <h2>About the Scientific Group</h2>
+        <p>Architectonics focuses on the <strong>technical and poetic integration</strong> of structural systems and building materials. We bridge the gap between abstract design concepts and the physical reality of construction, emphasizing efficiency, sustainability, and tectonic expression.</p>
+      </section>
+
+      <section class="card">
+        <h2>Research Focus</h2>
+        <ul class="stream-list">
+          <li class="stream-item"><span>Computational Design</span> ↗</li>
+          <li class="stream-item"><span>Tensile & Lightweight Structures</span> ↗</li>
+          <li class="stream-item"><span>Sustainable Materials (Bamboo/Earth)</span> ↗</li>
+          <li class="stream-item"><span>Building Performance & BIM</span> ↗</li>
+          <li class="stream-item"><span>Kinetic Architecture</span> ↗</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Education</h2>
+        <p>Our group oversees core studios and technical modules including:</p>
+        <ul style="color: var(--text-dim); font-size: 0.9rem;">
+          <li>Building Technology & Science</li>
+          <li>Structure & Construction Systems</li>
+          <li>Material Experiments</li>
+          <li>Advanced Architectural Computing</li>
+        </ul>
+      </section>
+
+      <section class="card full-width">
+        <h2>The Team</h2>
+        <div class="team-grid">
+          <div class="member">Anastasia Maurina, Ph.D.</div>
+          <div class="member">Galuh K. Tedjawinata</div>
+          <div class="member">Alvin Fernandez Komar</div>
+          <div class="member">Didit Sunartio, Dr.</div>
+          <div class="member">Budianastas Prasyatama, Ph.D.</div>
+          <div class="member">Nita Dwi Estika, M.T.</div>
+        </div>
+        <center>
+            <a href="https://arsitektur.unpar.ac.id/arsitektonik/" class="btn-outline">Official Department Page</a>
+        </center>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2026 ARCHITECTONICS KBI | DEPARTMENT OF ARCHITECTURE - UNPAR
+    </footer>
+
+  </body>
+</html>
